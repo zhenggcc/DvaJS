@@ -40,20 +40,20 @@ class IndexPage extends React.Component {
         console.log(this.props);
         this.props.dispatch({
             // call 方式修改
-            type: "indexTest/testMock",
+            // type: "indexTest/testMock",
             /*
                 put 方式修改
             */
-            // type: "indexTest/setTestMockData",
-            // data: {
-            //     data: [
-            //         {
-            //             name: "yh",
-            //             age: 8,
-            //             sex: "woman"
-            //         }
-            //     ]
-            // }
+            type: "indexTest/setTestMockData",
+            data: {
+                data: [
+                    {
+                        name: "yh",
+                        age: 8,
+                        sex: "woman"
+                    }
+                ]
+            }
         })
     }
     render() {
